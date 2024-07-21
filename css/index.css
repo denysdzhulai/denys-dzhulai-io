@@ -1,21 +1,45 @@
 body {
-  background-color: #195190ff;
-  color: #a2a2a1ff;
-}
+  background: linear-gradient(
+    90deg,
+    rgba(228, 219, 215, 1) 0%,
+    rgba(168, 164, 159, 1) 50%,
+    rgba(228, 219, 215, 1) 100%
+  );
 
-h1,
-h2 {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-p,
-li,
-a {
+  color: #5c5c5c;
   font-family: "Open Sans", sans-serif;
 }
 
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  text-align: center;
+  color: #5c5c5c;
+}
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
 section {
-  padding: 1em, 0em;
+  display: block;
+  margin: 1%;
+}
+
+#about {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 8%;
+}
+
+h3 {
+  font-weight: 400;
 }
