@@ -15,15 +15,18 @@ h1 {
 
 h2 {
   font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
+  font-size: 28px;;
+  font-weight: 200;
   font-style: normal;
   text-align: center;
   margin-top: 0;
-  color: #000;
+  text-shadow: 1px 2px 2px #000000;
+
 }
 
 h3, p {
   font-weight: 100;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -32,18 +35,22 @@ nav {
   color: #748d92;
   text-align: center;
   padding: 5px;
-  width: 40%;
   border: 2px solid #000000;
   border-radius: 10px;
-  margin: 30px auto;
+  margin: 40px ;
 }
-
-nav ul, #connect ul {
+nav ul {
+  display: flex;
+  margin: 0;
   padding: 0;
+  justify-content: space-evenly;
+}
+nav ul, #connect ul {
+  padding: 10px;
   list-style: none;
 }
 
-nav ul li, #connect ul li {
+#connect ul li {
   display:inline-flex;
   align-items: center;
   justify-content: center;
@@ -51,8 +58,8 @@ nav ul li, #connect ul li {
   border-right: 1px solid black;
 }
 
-nav ul li, #connect ul li:last-child {
-  border-right: none;
+#connect ul li:last-child {  
+  border-right: none
 }
 
 nav a, #connect a {
@@ -91,7 +98,6 @@ section {
   box-shadow: 1px 1px 1px black;
 }
 
-
 .experience-block {
   display: flex;
   justify-content: space-between;
@@ -99,12 +105,12 @@ section {
 }
 
 .experience-company {
-  font-size: 16px; 
+  font-size: 18px; 
   margin: 5px;
 }
 
 .experience-job-title {
-  font-size: 16px;
+  font-size: 18px;
   margin: 5px;
 }
 
@@ -117,11 +123,11 @@ section {
 nav ul li:hover {
   opacity: 0.7;
   transform: scale(1.2);
-  transition: transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.5s;
 }
 
 a img {
-  width: 36px
+  width: 30px;
 }
 
 a img:hover {
@@ -129,4 +135,3 @@ a img:hover {
   transform: scale(1.2);
   transition: transform 0.2s, opacity 0.2s;
 }
-
