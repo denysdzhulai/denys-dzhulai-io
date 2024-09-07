@@ -57,3 +57,30 @@ messageForm.addEventListener("submit", function (event) {
   messageList.appendChild(newMessage);
   messageForm.reset();
 });
+
+// *Lesson #15*
+
+const GITHUB_USERNAME = "denysdzhulai";
+const API_URL = `https://api.github.com/users/${GITHUB_USERNAME}/repos`;
+
+fetch(API_URL)
+  .then((response) => response.json())
+  .then((data) => {
+    const repositories = data;
+    console.log(repositories);
+    displayRepositories(repositories);
+  })
+  .catch((error) => {
+    console.error("Error fetching repositories:", error);
+  });
+
+function displayRepositories(repositories) {
+  const projectSection = document.getElementById("projects");
+  const projectList = projectSection.querySelector("ul");
+
+  repositories.forEach((repo) => {
+    const project = document.createElement("li");
+    project.innerText = repo.name;
+    projectList.appendChild(project);
+  });
+}
