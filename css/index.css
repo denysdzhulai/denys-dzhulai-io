@@ -224,6 +224,34 @@ a img:hover {
   }
 }
 
+/* Skills Section */
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+#skills li {
+  color: #b0bec5;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Projects section */
+#projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
 /* Leave a Message Section */
 #messageForm {
   background-color: #2e3944;
