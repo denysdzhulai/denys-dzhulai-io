@@ -80,17 +80,14 @@ function displayRepositories(repositories) {
   repositories.forEach((repo) => {
     const project = document.createElement("li");
 
-    // Create a link element
     const link = document.createElement("a");
     link.href = repo.html_url;
     link.innerText = repo.name;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
 
-    // Append the link to the list item
     project.appendChild(link);
 
-    // Append the list item to the project list
     projectList.appendChild(project);
   });
 }
