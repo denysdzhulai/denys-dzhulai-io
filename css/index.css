@@ -8,7 +8,7 @@ body {
 h1 {
   font-family: "Ubuntu", sans-serif;
   font-size: 48px;
-  font-weight: 200;
+  font-weight: 500;
   text-align: center;
   text-shadow: 1px 2px 2px #000000;
 }
@@ -159,71 +159,6 @@ a img:hover {
   font-size: 16px;
 }
 
-/* Tablet */
-@media (max-width: 1024px) {
-  body {
-    background: #1b2a34;
-    color: #9aa5ab;
-  }
-
-  h1 {
-    font-size: 36px;
-  }
-
-  section {
-    margin: 20px;
-    padding: 15px;
-  }
-
-  nav ul {
-    font-size: 14px;
-  }
-
-  nav ul li {
-    padding: 0 5px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  body {
-    background: #141d24;
-    color: #b0bec5;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  section {
-    margin: 10px;
-    padding: 10px;
-  }
-
-  header img {
-    width: 100px;
-    height: 100px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    font-size: 12px;
-  }
-
-  nav ul li {
-    padding: 5px 0;
-  }
-
-  #messageForm {
-    margin: 10px;
-    padding: 15px;
-  }
-
-  #messageForm h2 {
-    font-size: 24px;
-  }
-}
-
 /* Skills Section */
 #skills ul {
   display: flex;
@@ -299,4 +234,119 @@ a img:hover {
 #messageForm button:hover {
   background-color: #578088;
   color: #000000;
+}
+
+/* Messages Section */
+#messages {
+  background-color: #2e3944;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px black;
+  margin: 40px;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #b0bec5;
+}
+
+#messages ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#messages li {
+  background-color: #1b2a34;
+  border: 1px solid #748d92;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  color: #b0bec5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#messages li a {
+  color: #b0bec5;
+  text-decoration: none;
+}
+
+#messages li button {
+  background-color: #124e66;
+  color: #b0bec5;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#messages li button:hover {
+  background-color: #578088;
+  color: #000000;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  body {
+    background: #1b2a34;
+    color: #9aa5ab;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  section {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  nav ul {
+    font-size: 14px;
+  }
+
+  nav ul li {
+    padding: 0 5px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    background: #141d24;
+    color: #b0bec5;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  section {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    font-size: 12px;
+  }
+
+  nav ul li {
+    padding: 5px 0;
+  }
+
+  #messageForm {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  #messageForm h2 {
+    font-size: 24px;
+  }
 }
